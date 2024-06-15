@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link href="index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +19,12 @@
                     <img src="logo.png" style="margin-top: 10px; margin-left: 60px;">
                              
                      </div>
-                <div class="sidenav1" style="margin-left: 60px; margin-top: 100px;">
+                <div class="sidenav1" style="margin-left: 60px; margin-top: 100px;transition: color 0.3s, font-size 0.3s;cursor: pointer;">
                     <div class="logo1" style="margin-top: 100px;">
                         <svg width="36" height="41" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.14286 0C4.78286 0 4.47429 0.05125 4.16571 0.15375C2.16 0.56375 0.565714 2.1525 0.154286 4.15125C0 4.45875 0 4.76625 0 5.125V33.3125C0 37.5662 3.44571 41 7.71429 41H36V35.875H7.71429C6.27429 35.875 5.14286 34.7475 5.14286 33.3125C5.14286 31.8775 6.27429 30.75 7.71429 30.75H36V2.5625C36 1.1275 34.8686 0 33.4286 0H30.8571V15.375L25.7143 10.25L20.5714 15.375V0H5.14286Z" fill="black"/>
                             </svg>
-                            <p class="lib" style="margin-left: 61px; margin-top:-40px; font-size: 24px;">Library</p>
+                            <p class="lib" style="margin-left: 61px; margin-top:-40px; font-size: 24px;"><a href="library page.html" style="text-decoration: none; color: rgb(40, 40, 40);"> Library</a></p>
                     </div>
                     <div>
                         <div class="logo2" style="margin-top: 100px;">
@@ -49,19 +50,21 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="navtext" style="margin-left:50px; display: flex; margin-top: 50px; font-weight: 600; font-size: 24px; align-items: center;">
-                    <div class="search"
-                        style="height: 44px; width: 194px; background-color:#DFDEDE; border-radius: 10px;">
-                        <input type="text" placeholder="Search" class="text" style="background: transparent; color:black; outline: none; border: none; padding-left: 57px; padding-top: 4px; font-size: 24px;">
+                <div class="navtext">
+                    <div class="search">
+                        <input type="text" placeholder="Search" class="text">
                     </div>
                     <p class="navactive" style="margin-left:120px; padding-top:10px;color:#F2AF0D;">Home</p>
-                    <p style=" margin-left:52px; padding-top:10px;">Wishlist</p>
-                    <p style=" margin-left:52px; padding-top:10px;">About Us</p>
-                    <p style=" margin-left:52px; padding-top:10px;">Add to cart</p>
+                    <p  style=" margin-left:52px; padding-top:10px;">Wishlist</p>
+                    <p  style=" margin-left:52px; padding-top:10px;">About Us</p>
+                    <p  style=" margin-left:52px; padding-top:10px;">Add to cart</p>
                     <img src="C:\Users\user\Desktop\game store project\Game-Store\profile.png" style="margin-left: 120px;">
                 </div>
                 <div class="slider">
-                    <img src="C:\Users\user\Desktop\game store project\Game-Store\call.png" alter="Man with gun" style="height: 344px; width: 563px; margin-top: 100px; margin-left: 50px;">
+                    <div class="imsas" style="height: 344px; width: 563px; margin-top: 100px; margin-left: 50px;">
+                        <img src="call.png" alter="Man with gun" id="img2">
+                    </div>
+        
                     <div class="choice" style="margin-top: -300px; font-size: 24px;">
                         <div class="option1">
                                 <p style="height: 56px;
@@ -80,15 +83,15 @@
                 </div>
                 <div class="slidebox">
                     <div class="circle" style="margin-top:55px; display: flex;">
-                        <div class="circle1" style="height:20px;
-                        width:20px;background-color: #CAC4C4; border-radius: 100%; margin-left: 270px;">
+                        <div class="circle1" onclick="changeImage('call.png')"style="height:20px;
+                        width:20px;background-color: #CAC4C4; border-radius: 100%; margin-left: 260px;">
                         
                         </div>
-                        <div class="circle2" style="height:20px;
+                        <div class="circle2" onclick="changeImage('Ea fc.png')" style="height:20px;
                         width:20px;background-color: #CAC4C4; border-radius: 100%; margin-left: 50px;">
                             
                         </div>
-                        <div class="circle3"  style="height:20px;
+                        <div class="circle3"  onclick="changeImage('farcry.png')" style="height:20px;
                         width:20px;background-color: #CAC4C4; border-radius: 100%; margin-left: 50px;">
                 
                         </div>
@@ -124,7 +127,7 @@
                         <img src="C:\Users\user\Desktop\game store project\Game-Store\apex.png">
                     </div>
                     <div class="image3" style="padding-left: 50px;">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\valo.png">
+                        <img src="C:\Users\user\Desktop\game store project\Game-Store\vdd.png">
                     </div>
                 </div>
                 <div>
@@ -136,11 +139,11 @@
                         </div>
                         <div class="trand2">
                             <img src="C:\Users\user\Desktop\game store project\Game-Store\ghost.png" style="border-radius: 10px;margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 75px; font-size: 24px;">Ghost of Tsushima</p>
+                            <p style="margin-left:50px;margin-top: 25px; margin-left: 110px; font-size: 24px;">Ghost of Tsushima</p>
                         </div>
                         <div class="trand3">
                             <img src="C:\Users\user\Desktop\game store project\Game-Store\Days gone.png" style="border-radius: 10px; margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 75px; font-size: 24px;">Days Gone</p>
+                            <p style="margin-left:50px;margin-top: 25px; margin-left: 150px; font-size: 24px;">Days Gone</p>
                         </div>
                     </div>
                     <div class="trand" style="display: flex; margin-top: 25px;">
@@ -150,11 +153,11 @@
                         </div>
                         <div class="trand2">
                             <img src="C:\Users\user\Desktop\game store project\Game-Store\The last of us.png" style="border-radius: 10px;margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 75px; font-size: 24px;">The last of Us</p>
+                            <p style="margin-left:50px;margin-top: 25px; margin-left: 130px; font-size: 24px;">The last of Us</p>
                         </div>
                         <div class="trand3">
                             <img src="C:\Users\user\Desktop\game store project\Game-Store\hog.png" style="border-radius: 10px; margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 75px; font-size: 24px;">Hogwarts Legacy</p>
+                            <p style="margin-left:50px;margin-top: 25px; margin-left: 125px; font-size: 24px;">Hogwarts Legacy</p>
                         </div>
                     </div>
                 </div>
@@ -177,5 +180,10 @@
         </div>
     </div>     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        function changeImage(imagePath) {
+            document.getElementById('img2').src = imagePath;
+        }
+    </script>  
+</body>
 </html>

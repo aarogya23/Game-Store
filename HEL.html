@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        .slider {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img id="slider-image" src="ghost.png" alt="Slider Image">
+    </div>
+    <button onclick="changeImage()">Next Image</button>
+
+    <script>
+        let currentImageIndex = 0;
+const images = [
+    'ghost.png',
+    'hog.png',
+    'fifa17.png',
+    // Add more image paths as needed
+];
+
+function changeImage() {
+    // Increment the image index
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+
+    // Get the image element
+    const sliderImage = document.getElementById('slider-image');
+
+    // Change the src attribute to the new image path
+    sliderImage.src = images[currentImageIndex];
+}
+    </script>
+</body>
+</html>

@@ -12,6 +12,58 @@
      font-weight: 600; 
      font-size: 24px; 
      align-items: center;
+}.navtext p:hover {
+    color: #F2AF0D;
+    transition: transform 0.3s ease;
+    font-size: 26px; /* Example of enlarging text on hover */
+}
+.logo1 .logo-svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.logo1 .lib {
+    transition: color 0.3s ease;
+}
+
+.logo1:hover .logo-svg {
+    transform: scale(1.1);
+    fill: orange; /* Change this to desired color on hover */
+}
+
+.logo1:hover .lib {
+    color: orange; /* Change this to desired color on hover */
+}
+.logo2 .logo-svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.logo2 .lib {
+    transition: color 0.3s ease;
+}
+
+.logo2:hover .logo-svg {
+    transform: scale(1.1);
+    fill: orange; /* Change this to desired color on hover */
+}
+
+.logo2:hover .lib {
+    color: orange; /* Change this to desired color on hover */
+}
+.logo3 .logo-svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.logo3 .lib {
+    transition: color 0.3s ease;
+}
+
+.logo3:hover .logo-svg {
+    transform: scale(1.1);
+    fill: orange; /* Change this to desired color on hover */
+}
+
+.logo3:hover .lib {
+    color: orange; /* Change this to desired color on hover */
 }
 .search{
     height: 44px; 
@@ -31,7 +83,7 @@
     width: 296px;
     height: 95px;
     margin-left: 550px;
-    margin-top: -160px;
+    margin-top: -200px;
 }
 .release{
     width:288px;

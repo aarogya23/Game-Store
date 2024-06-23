@@ -10,11 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<style>
+    @media (max-width: 760px) {
+             .sidenav1 {
+                display:none;
+            }
+            .mainlogo{
+                margin-left: -10px; 
+                margin-top: 5px;
+            }
+            .whis{
+                display: none;
+            }
+            .navtext{
+                margin-top:-80px;
+                margin-left: 224px;
+            }
+        }
+</style>
   <body style="font-family: Roboto;">
     <div class="container-full">
-        
+         
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 col-sm-12">
                 <div class="mainlogo">
                     <img src="logo.png" style="margin-top: 10px; margin-left: 60px;">
                              
@@ -49,15 +67,15 @@
                     
                 </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-8 col-sm-12">
                 <div class="navtext">
                     <div class="search">
-                        <input type="text" placeholder="Search" class="text">
+                        <input type="text" placeholder="Search" class="text form-control" style="width: 200px;">
                     </div>
                     <p class="navactive" style="margin-left:120px; padding-top:10px;color:#F2AF0D;">Home</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">Wishlist</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">About Us</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">Add to cart</p>
+                    <p style=" margin-left:52px; padding-top:10px;">Wishlist</p>
+                    <p class="whis" style=" margin-left:52px; padding-top:10px;">About Us</p>
+                    <p class="whis" style=" margin-left:52px; padding-top:10px;">Add to cart</p>
                     <img src="C:\Users\user\Desktop\game store project\Game-Store\profile.png" style="margin-left: 120px;">
                 </div>
                 <div class="slider">

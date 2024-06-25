@@ -9,6 +9,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<style>
+        /* Style the rectangular button */
+        .buy-button {
+
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #FAFAFA; /* Blue color (you can change this) */
+            color: #161515; /* Text color */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        .buy-button:hover {
+            color: white;
+            background-color: #2980b9; /* Darker blue on hover (you can adjust this) */
+        }
+
+        .price1{
+    display: flex;
+    margin-top: 30px;
+    gap: 167px;
+    font-weight: 700;
+    margin-left: -150px;  
+}
+.price2{
+    display: flex;
+    margin-top: 3px;
+    gap: 109px;
+    font-weight: 700;
+    margin-left: -150px;
+}
+.price3{
+    display: flex;
+    margin-top: 3px;
+    gap: 171px;
+    font-weight: 700;
+    margin-left: -150px;
+}
+.taxes{
+    display: flex;
+    margin-top: 3px;
+    gap: 94px;
+    font-weight: 700;
+    margin-left: -150px;
+}
+</style>
   <body style="font-family: Roboto;">
     <div class="container-full">
         
@@ -54,39 +104,196 @@
                         style="height: 44px; width: 194px; background-color:#DFDEDE; border-radius: 10px;">
                         <input type="text" placeholder="Search" class="text" style="background: transparent; color:black; outline: none; border: none; padding-left: 57px; padding-top: 4px; font-size: 24px;">
                     </div>
-                    <p class="navactive" style="margin-left:120px; padding-top:10px;color:#F2AF0D;">Home</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">Wishlist</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">About Us</p>
-                    <p  style=" margin-left:52px; padding-top:10px;">Add to cart</p>
-                    <img src="C:\Users\user\Desktop\game store project\Game-Store\profile.png" style="margin-left: 120px;">
+                    <p class="navactive" id="first" style="margin-left:220px; padding-top:10px;color:#F2AF0D;">Home</p>
+                    <p style=" margin-left:52px; padding-top:10px;">Wishlist</p>
+                    <p class="whis" style=" margin-left:52px; padding-top:10px;">Cartlist</p>
+                    <p style=" margin-left:52px; padding-top:10px;">News</p>
+                    <img class="prof" src="C:\Users\user\Desktop\game store project\Game-Store\profile.png" style="
+                        margin-left: 120px;
+                         margin-top: -5px;
+                    ">
                 </div>
                     <p style="padding-top: 105px; font-weight: 600; font-size: 24px;">My Cart</p>
                 <div class="list1" style="height: 192px; width: 622px; background-color: #D9D9D9; border-radius: 10px; margin-top: 50px;">
                     <div class="pic1" style="padding-top: 48px; padding-left: 24px;">
                             <img src="modern.png">
                             <p style="    margin-top: -118px;
-    margin-left: 152px; font-size: 16px; font-weight: 500; width: 148px; height: 112px;">
+                                margin-left: 152px; font-size: 16px; font-weight: 500; width: 148px; height: 112px;">
                                 BASE GAME<br>
-Call of duty Warzone<br>
--50%<br>
-Nrs 10000.00<br>
-Earn 5% back<br>
-Self-Refundable
+                                Call of duty Warzone<br>
+                                -50%<br>
+                                Nrs 10000.00<br>
+                                Earn 5% back<br>
+                                Self-Refundable
 
 
                             </p>
                             <p style="margin-left: 417px;
-    margin-top: -129px; font-size: 16px; font-weight: 400;">
+                                 margin-top: -129px; font-size: 16px; font-weight: 400;">
                                 Sale ends 6/13/2024 <br>
                                 at 8:45 PM
                             </p>
-                            <p>
-                                Cancel
-                            </p>
+                            <div style="display: flex; margin-left: 362px; margin-top: 42px; gap:60px">
+                                <a href="/link-to/your-page" style="color: #161515; text-align: center;    margin-top: 10px;">Cancel</a>
+                                <a href="#" class="buy-button" >Buy Now</a> 
+                            </div>
+                            
+
+                            
                     </div>
             
 
                 </div>
+
+                <div class="list1" style="height: 192px; width: 622px; background-color: #D9D9D9; border-radius: 10px; margin-top: 60px;">
+                    <div class="pic1" style="padding-top: 48px; padding-left: 24px;">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\battlefield.png">
+                            <p style="    margin-top: -118px;
+                                margin-left: 152px; font-size: 16px; font-weight: 500; width: 148px; height: 112px;">
+                                BASE GAME<br>
+                                Battlefield 1 <br>
+                                -50%<br>
+                                Nrs 9000.00<br>
+                                Earn 5% back<br>
+                                Self-Refundable
+
+
+                            </p>
+                            <p style="margin-left: 417px;
+                                 margin-top: -129px; font-size: 16px; font-weight: 400;">
+                                Sale ends 6/13/2024 <br>
+                                at 8:45 PM
+                            </p>
+                            <div style="display: flex; margin-left: 362px; margin-top: 42px; gap:60px">
+                                <a href="/link-to/your-page" style="color: #161515; text-align: center;    margin-top: 10px;">Cancel</a>
+                                <a href="#" class="buy-button" >Buy Now</a> 
+                            </div>
+                            
+
+                            
+                    </div>
+            
+
+                </div>
+
+                
+
+                <div class="list1" style="height: 192px; width: 622px; background-color: #D9D9D9; border-radius: 10px; margin-top: 50px;">
+                    <div class="pic1" style="padding-top: 48px; padding-left: 24px;">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\tom.png">
+                            <p style="    margin-top: -118px;
+                                margin-left: 152px; font-size: 16px; font-weight: 500; width: 148px; height: 112px;">
+                                BASE GAME<br>
+                                Rainbow Six<br>
+                                -50%<br>
+                                Nrs 10000.00<br>
+                                Earn 5% back<br>
+                                Self-Refundable
+
+
+                            </p>
+                            <p style="margin-left: 417px;
+                                 margin-top: -129px; font-size: 16px; font-weight: 400;">
+                                Sale ends 6/13/2024 <br>
+                                at 8:45 PM
+                            </p>
+                            <div style="display: flex; margin-left: 362px; margin-top: 42px; gap:60px">
+                                <a href="/link-to/your-page" style="color: #161515; text-align: center;    margin-top: 10px;">Cancel</a>
+                                <a href="#" class="buy-button" >Buy Now</a> 
+                            </div>
+                            
+
+                            
+                    </div>
+            
+
+                </div>
+
+
+                <div class="list1" style="height: 192px; width: 622px; background-color: #D9D9D9; border-radius: 10px; margin-top: 50px;">
+                    <div class="pic1" style="padding-top: 48px; padding-left: 24px;">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\eafootball.png">
+                            <p style="    margin-top: -118px;
+                                margin-left: 152px; font-size: 16px; font-weight: 500; width: 148px; height: 112px;">
+                                BASE GAME<br>
+                                EA FC 24<br>
+                                -50%<br>
+                                Nrs 10000.00<br>
+                                Earn 5% back<br>
+                                Self-Refundable
+
+
+                            </p>
+                            <p style="margin-left: 417px;
+                                 margin-top: -129px; font-size: 16px; font-weight: 400;">
+                                Sale ends 6/13/2024 <br>
+                                at 8:45 PM
+                            </p>
+                            <div style="display: flex; margin-left: 362px; margin-top: 42px; gap:60px">
+                                <a href="/link-to/your-page" style="color: #161515; text-align: center;    margin-top: 10px;">Cancel</a>
+                                <a href="#" class="buy-button" >Buy Now</a> 
+                            </div>
+                            
+
+                            
+                    </div>
+            
+
+                </div>
+
+
+                
+            <div class="OrderSummary" style="    margin-top: -995px;
+    margin-left: 886px;">
+                                    <h1 style="margin-left: -153px; font-size: 24px; font-weight:700;">
+                                        Games and Apps<br>
+                Summary
+                                    </h1>
+                <div class="price1">
+                    <p>
+                        Price
+                    </p>
+                    <p>
+                        Nrs 8000.00
+                    </p>
+                </div>
+                <div class="price2">
+                    <p>
+                        Sale Discount
+                    </p>
+                    <p>
+                        Nrs 4000.00
+                    </p>
+                </div>
+
+                <div class="taxes">
+                    <p>
+                        Taxes
+                    </p>
+                    <p style="font-weight: 400;">
+                        Calculated at Checkout
+                    </p>
+                </div>
+                <hr style="width: 292px; margin-left: -150px;">
+                <div class="price3">
+                    <p>
+                        Total
+                    </p>
+                    <p>
+                        Nrs 4000.00
+                    </p>
+                </div>   
+
+                <div style=" margin-left: -151px; width: 300px; height: 53px; background-color: rgb(16 86 239 / 60%); color: white; border-radius: 10px;">
+                     <p style="font-size: 24px; padding: 9px 90px ;">Check Out</p>
+                </div>
+
+
+
+                
+
+
+                
 
             </div>
         </div>

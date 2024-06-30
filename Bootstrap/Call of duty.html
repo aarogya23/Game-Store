@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            border-bottom: 1px solid #444;
+        }
+        .card img {
+            object-fit: cover;
+        }
+        .list-group-item-action.active {
+            background-color: #1e90ff;
+            border-color: #1e90ff;
+        }
+        .card-body a {
+            color: #1e90ff;
+        }
+        .img-thumbnail {
+            max-width: 100px;
+            height: auto;
+        }
+        .custom-navbar {
+            background-color: #1f1f1f;
+        }
+        .custom-navbar .nav-link {
+            color: #ffffff;
+        }
+        .custom-navbar .btn-outline-dark {
+            color: #ffffff;
+            border-color: #f2f1f1;
+        }
+        .custom-navbar .btn-outline-dark:hover {
+            background-color: #ff9800;
+            color: white;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: 1px solid #444;
+        }
+        .card-title {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #1e90ff;
+            border-color: #1e90ff;
+        }
+        .btn-primary:hover {
+            background-color: #FF9800;
+            border-color: #FF9800;
+        }
+        .btn-outline-primary {
+            color: #1e90ff;
+            border-color: #1e90ff;
+        }
+        .btn-outline-primary:hover {
+            background-color: #FF9800;
+            color: #ffffff;
+            border-color: #FF9800;
+        }
+        .bg-light {
+            background-color: #1f1f1f !important;
+            color: #ffffff;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-navbar py-3 text-light">
+        <div class="container d-flex justify-content-between align-items-center" style="background-color: #1f1f1f;">
+            <div class="logo">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="LIBRARY.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Add to cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="profile-icon ms-3">
+                    <a href="#" class="text-light"><img src="profile_icon.png" alt="Profile" width="40"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-7">
+                <div class="card mb-4">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\rec.png" class="card-img" alt="Modern Warfare III" style="margin-top: 50px; margin-left: 50px; width: 340px; height: 270px;">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Call of Duty®: Modern Warfare® III</h5>
+                                <p class="card-text">In the direct sequel to the record-breaking Call of Duty®: Modern Warfare® II, Captain Price and Task Force 141 face off against the ultimate threat.</p>
+                                <p class="card-text"><strong>RELEASE DATE:</strong> 10 Nov, 2023</p>
+                                <p class="card-text"><strong>DEVELOPER:</strong> <a href="#">Sledgehammer Games</a>, <a href="#">Treyarch</a>, <a href="#">Infinity Ward</a>, <a href="#">Beenox</a>, <a href="#">Raven Software</a></p>
+                                <p class="card-text"><strong>PUBLISHER:</strong> <a href="#">Activision</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <img src="related-image-1.jpg" alt="Related Image 1" class="img-thumbnail">
+                        <img src="related-image-2.jpg" alt="Related Image 2" class="img-thumbnail">
+                        <img src="related-image-3.jpg" alt="Related Image 3" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <button class="btn btn-outline-primary">Buy Call of Duty®: Modern Warfare® III</button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <button class="btn btn-outline-primary">Buy Call of Duty®: Modern Warfare® III - Vault Edition</button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+                <div>
+                    <h5>Purchase any edition and receive:</h5>
+                    <ul>
+                        <li>Available in Call of Duty®: Modern Warfare® III, Call of Duty®: Modern Warfare® II and Call of Duty®: Warzone™:</li>
+                        <li>Soap Operator Pack</li>
+                        <li>Zombie Ghost Operator Skin*</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bg-light p-3">
+                    <h5>SYSTEM REQUIREMENTS</h5>
+                    <p><strong>MINIMUM:</strong></p>
+                    <ul class="list-unstyled">
+                        <li>Requires a 64-bit processor and operating system</li>
+                        <li>OS: Windows® 10 64 Bit (latest update)</li>
+                        <li>Processor: Intel® Core™ i5-6600 or AMD Ryzen™ 5 1400</li>
+                        <li>Memory: 8 GB RAM</li>
+                        <li>Graphics: NVIDIA® GeForce® GTX 960 / GTX 1650 or AMD Radeon™ RX 470</li>
+                        <li>DirectX: Version 12</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="mt-3">
+                Learn more about our mission, vision, and the team behind our company in the <strong>About Us</strong> section. Explore our wide range of products and enjoy a seamless shopping experience in the <strong>Shop</strong> section. We value your feedback, so please share your thoughts and help us improve our services in the <strong>Feedback</strong> section. Read our <strong>Privacy Policy</strong> to understand how we handle your personal data.
+            </p>
+            <div class="container d-flex justify-content-between">
+                <p>&copy; 2024 Trinetra Game Studio</p>
+                <div>
+                    <a href="#" class="mx-2 text-light">Privacy Policy</a>
+                    <a href="#" class="mx-2 text-light">Terms of Service</a>
+                    <a href="#" class="mx-2 text-light">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,187 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="index.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinetra Game Studio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-  <body style="font-family: Roboto;">
-    <div class="container-full" style="size: 100%;">
-         
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <div class="mainlogo">
-                    <img src="logo.png">
-                             
-                     </div>
-                <div class="sidenav1">
-                    <div class="logo1">
-                        <svg width="36" height="41" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.14286 0C4.78286 0 4.47429 0.05125 4.16571 0.15375C2.16 0.56375 0.565714 2.1525 0.154286 4.15125C0 4.45875 0 4.76625 0 5.125V33.3125C0 37.5662 3.44571 41 7.71429 41H36V35.875H7.71429C6.27429 35.875 5.14286 34.7475 5.14286 33.3125C5.14286 31.8775 6.27429 30.75 7.71429 30.75H36V2.5625C36 1.1275 34.8686 0 33.4286 0H30.8571V15.375L25.7143 10.25L20.5714 15.375V0H5.14286Z" fill="black"/>
-                            </svg>
-                            <p class="lib"><a href="library page.html" style="text-decoration: none; color: rgb(40, 40, 40);"> Library</a></p>
-                    </div>
-                    <div>
-                        <div class="logo2">
-                            <svg width="42" height="37" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.23881 0.0125087C1.54249 0.143305 0.918946 0.593484 0.505352 1.26401C0.0917579 1.93454 -0.0780064 2.77049 0.0334051 3.58797C0.144816 4.40544 0.528277 5.13748 1.09943 5.62303C1.67058 6.10858 2.38264 6.30789 3.07897 6.17709H10.9554L11.428 7.71824L13.5809 15.424L15.7338 23.1297C15.9438 23.9311 16.8365 24.6708 17.5191 24.6708H35.8975C36.6326 24.6708 37.4728 23.9311 37.6828 23.1297L41.9361 7.71824C42.1462 6.91684 41.8311 6.17709 41.096 6.17709H17.7817L15.7863 1.73859C15.5738 1.22915 15.2456 0.798435 14.838 0.493886C14.4303 0.189337 13.959 0.0227635 13.4759 0.0125087L2.97395 0.0125087C2.81674 -0.00416955 2.65857 -0.00416955 2.50136 0.0125087C2.39643 0.00510449 2.29123 0.00510449 2.1863 0.0125087L2.23881 0.0125087ZM18.8319 30.8354C17.3616 30.8354 16.2064 32.1916 16.2064 33.9177C16.2064 35.6438 17.3616 37 18.8319 37C20.3021 37 21.4573 35.6438 21.4573 33.9177C21.4573 32.1916 20.3021 30.8354 18.8319 30.8354ZM34.5848 30.8354C33.1145 30.8354 31.9593 32.1916 31.9593 33.9177C31.9593 35.6438 33.1145 37 34.5848 37C36.055 37 37.2103 35.6438 37.2103 33.9177C37.2103 32.1916 36.055 30.8354 34.5848 30.8354Z" fill="black"/>
-                                </svg>
-                                
-                                <p class="lib" >Shop</p>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="logo3">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 0V4.5C19.44 4.5 31.5 16.56 31.5 31.5H36C36 14.13 21.87 0 4.5 0ZM4.5 9V13.5C14.445 13.5 22.5 21.555 22.5 31.5H27C27 19.08 16.92 9 4.5 9ZM4.5 18V22.5C9.495 22.5 13.5 26.505 13.5 31.5H18C18 24.075 11.925 18 4.5 18ZM4.5 27C2.025 27 0 29.025 0 31.5C0 33.975 2.025 36 4.5 36C6.975 36 9 33.975 9 31.5C9 29.025 6.975 27 4.5 27Z" fill="black"/>
-                            </svg>
-                            
-                            <p class="lib">Feed Back</p>
-                                
-                            
-                        </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="navtext">
-                    <div class="search">
-                        <input type="text" placeholder="Search" class="text form-control">
-                    </div>
-                    <p class="navactive" id="first" style="margin-left:220px; padding-top:10px;color:#F2AF0D;">Home</p>
-                    <p style=" margin-left:52px; padding-top:10px;">Wishlist</p>
-                    <p class="whis" style=" margin-left:52px; padding-top:10px;">Cartlist</p>
-                    <p style=" margin-left:52px; padding-top:10px;">News</p>
-                    <img class="prof" src="C:\Users\user\Desktop\game store project\Game-Store\profile.png">
-                </div>
-                <div class="slider">
-                    <div class="imsas">
-                        <img src="call.png" alter="Man with gun" id="img2">
-                    </div>
-        
-                    <div class="choice">
-                        <div class="option1">
-                                <p >Call of duty Warzone</p>
-                        </div>
-                        <div class="option2">
-                                <p>EA Fc 24</p>
-                        </div>
-                        <div class="option3">
-                                <p>Grand Theft Auto 5</p>
-                        </div>
-        
-                     </div>
-                </div>
-                <div class="slidebox">
-                    <div class="circle">
-                        <div class="circle1" onclick="changeImage('call.png')">
-                        
-                        </div>
-                        <div class="circle2" onclick="changeImage('Ea fc.png')">
-                            
-                        </div>
-                        <div class="circle3" onclick="changeImage('farcry.png')" style="   height:20px;
-                        width:20px;
-                        background-color: #CAC4C4; 
-                        border-radius: 100%; 
-                        margin-left: 50px;">
-                
-                        </div>
-                        
-                    </div>
-                </div> 
-                <div>
-                    <p class="sportline">Spring Sale Spotline</p>
-                    <div class="spring">
-                        <div class="spring1">
-                          <img class="img-ea" src="C:\Users\user\Desktop\game store project\Game-Store\eafc.png">
-                          <p class="ea">EA Fc 24</p>
-                        </div>
-                        <div class="spring2">
-                            <img  class="img-call" src="C:\Users\user\Desktop\game store project\Game-Store\warzone.png" >
-                            <p class="Call">Call of duty warzone</p>
-                        </div>
-                        <div class="spring3">
-                            <img src="C:\Users\user\Desktop\game store project\Game-Store\gta5.png" style="border-radius: 10px; margin-left: 50px;">
-                            <p style="margin-top: 50px; margin-left: 107px; font-size: 24px;">Grand Theft Auto 5</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="freegame" style="width: 1035px; height: 458px; background-color:#CAC4C4; border-radius: 10px; margin-bottom: 60px; margin-top: 100px;">
-                    <div class="heading">
-                        <p style="margin-top:31px; margin-left: 10px; font-size: 24px; padding-top: 30px; padding-left: 33px;">Free Games</p>
-                    </div>
-                    <div style="display: flex; padding-top: 10px; padding-left: 40px;">
-                    <div class="image1" >
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\pubg.png">
-                    </div>
-                    <div class="image2" style="padding-left: 50px;">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\apex.png">
-                    </div>
-                    <div class="image3" style="padding-left: 50px;">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\vdd.png">
-                    </div>
-                </div>
-                <div>
-                    <p style="margin-top:150px; font-size: 24px;">Tranding Games</p>
-                    <div class="trand" style="display: flex; margin-top: 25px;">
-                        <div class="trand1">
-                          <img src="C:\Users\user\Desktop\game store project\Game-Store\far cry.png" style="border-radius: 10px;">
-                          <p style="margin-left:105px; margin-top: 25px; font-size: 24px;">Far Cry 6</p>
-                        </div>
-                        <div class="trand2">
-                            <img src="C:\Users\user\Desktop\game store project\Game-Store\ghost.png" style="border-radius: 10px;margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 110px; font-size: 24px;">Ghost of Tsushima</p>
-                        </div>
-                        <div class="trand3">
-                            <img src="C:\Users\user\Desktop\game store project\Game-Store\Days gone.png" style="border-radius: 10px; margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 150px; font-size: 24px;">Days Gone</p>
-                        </div>
-                    </div>
-                    <div class="trand" style="display: flex; margin-top: 25px;">
-                        <div class="trand1">
-                          <img src="C:\Users\user\Desktop\game store project\Game-Store\Cyberpunk.png" style="border-radius: 10px;">
-                          <p style="margin-left:105px; margin-top: 25px; font-size: 24px;">Cyberpunk</p>
-                        </div>
-                        <div class="trand2">
-                            <img src="C:\Users\user\Desktop\game store project\Game-Store\The last of us.png" style="border-radius: 10px;margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 130px; font-size: 24px;">The last of Us</p>
-                        </div>
-                        <div class="trand3">
-                            <img src="C:\Users\user\Desktop\game store project\Game-Store\hog.png" style="border-radius: 10px; margin-left: 50px;">
-                            <p style="margin-left:50px;margin-top: 25px; margin-left: 125px; font-size: 24px;">Hogwarts Legacy</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="freegame" style="width: 1035px; height: 458px; background-color:#CAC4C4; border-radius: 10px; margin-bottom: 60px; margin-top: 100px;">
-                    <div class="heading">
-                        <p style="margin-top:31px; margin-left: 10px; font-size: 24px; padding-top: 30px; padding-left: 33px;">Old Fifa Title</p>
-                    </div>
-                    <div style="display: flex; padding-top: 10px; padding-left: 40px;">
-                    <div class="image1" >
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa 14.png">
-                    </div>
-                    <div class="image2" style="padding-left: 50px;">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa17.png">
-                    </div>
-                    <div class="image3" style="padding-left: 50px;">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa 18.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script>
-        function changeImage(imagePath) {
-            document.getElementById('img2').src = imagePath;
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
         }
-    </script>  
+        .custom-navbar {
+            background-color: #1f1f1f;
+        }
+        .custom-navbar .nav-link {
+            color: #ffffff;
+        }
+        .custom-navbar .nav-link:hover {
+            color: #ff9800;
+        }
+        .custom-navbar .form-control {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+        }
+        .custom-navbar .btn-outline-dark {
+            border: none;
+            color: #000;
+        }
+        .custom-navbar .btn-outline-dark:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+        .profile-icon img {
+            border-radius: 50%;
+        }
+        .hero {
+            background-color: #1f1f1f;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s;
+        }
+        .card-body {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card-text {
+            margin: 0;
+            transition: color 0.3s;
+        }
+        .card-body p:last-child {
+            margin: 0;
+        }
+        .popup-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .card:hover .popup-text {
+            opacity: 1;
+        }
+        .card:hover .card-text {
+            color: #ff9800;
+        }
+        footer {
+            background-color: #1f1f1f;
+        }
+        .nav-link {
+            color: #f8f9fa;
+            font-weight: 500;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-navbar py-3 text-light">
+        <div class="container d-flex justify-content-between align-items-center" style="background-color: #1f1f1f;">
+            <div class="logo">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="LIBRARY.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Add to cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="profile-icon ms-3">
+                    <a href="#" class="text-light"><img src="profile_icon.png" alt="Profile" width="40"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero text-center py-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="C:\Users\user\Desktop\game store project\Game-Store\short.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="C:\Users\user\Desktop\game store project\Game-Store\farfromhere.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="C:\Users\user\Desktop\game store project\Game-Store\standard.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Spring Sale Spotlight</h2>
+            <div class="row">       
+                <div class="col-md-4">
+                    <a href="your-link-here.html" style="text-decoration: none; color: inherit;">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\eafc.png" class="card-img-top" alt="EA FC 24">
+                            <div class="card-body" style="display: flex; gap: 137px;">
+                                <p class="card-text">EA FC 24</p>
+                                <p>Rs2400</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Call of duty.html" style="text-decoration: none; color: inherit;">
+                        <div class="card">
+                            <img src="C:/Users/user/Desktop/game store project/Game-Store/warzone.png" class="card-img-top" alt="Call of Duty Warzone">
+                            <div class="card-body" style="display: flex; gap: 74px;">
+                                <p class="card-text">Call of Duty Warzone</p>
+                                <p>Rs1999</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="Spider-man.html" style="text-decoration: none; color: inherit;">
+                        <div class="card">
+                            <img src="C:/Users/user/Desktop/game store project/Game-Store/spider.jpg" class="card-img-top" alt="Spider-man Miles Morales">
+                            <div class="card-body" style="display: flex; gap: 25px;">
+                                <p class="card-text">Spider-man Miles Morales</p>
+                                <p>Rs1000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Trinetra Game Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubqWAX0I32lWdjf4uu24rhj8pqq6S4pOgsIDIQCHt5rV9KT" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuM8IuHJ4MXeDSMRZ4/akW2rlYZSQ8pYgSe2mcsbnzB3KPq8cwMc2vraI5zFEnBM" crossorigin="anonymous"></script>
 </body>
 </html>

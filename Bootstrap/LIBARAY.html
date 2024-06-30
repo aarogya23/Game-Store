@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #444;
+        }
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+        .custom-navbar {
+            background-color: #1f1f1f;
+        }
+        .custom-navbar .nav-link {
+            color: #ffffff;
+        }
+        .custom-navbar .btn-outline-dark {
+            color: #ffffff;
+            border-color: #444;
+        }
+        .custom-navbar .btn-outline-dark:hover {
+            background-color: #ff9800;
+            color: #121212;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: 1px solid #444;
+        }
+        .card-title {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #1e90ff;
+            border-color: #1e90ff;
+        }
+        .btn-primary:hover {
+            background-color: #ff9800;
+            border-color: #ff9800;
+        }
+        .bg-light {
+            background-color: #1f1f1f !important;
+        }
+        .list-unstyled a {
+            color: #1e90ff;
+        }
+        .list-unstyled a:hover {
+            color: #104e8b;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-navbar py-3 text-light">
+        <div class="container d-flex justify-content-between align-items-center" style="background-color: #1f1f1f;">
+            <div class="logo">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="LIBRARY.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Add to cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="profile-icon ms-3">
+                    <a href="#" class="text-light"><img src="profile_icon.png" alt="Profile" width="40"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2>Library</h2>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fav</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="sortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort By: A-Z
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="sortMenuButton">
+                            <a class="dropdown-item" href="#">A-Z</a>
+                            <a class="dropdown-item" href="#">Z-A</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\mo.png" class="card-img-top" alt="Modern Warfare II">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern Warfare II</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\batt.png" class="card-img-top" alt="Battlefield 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Battlefield 1</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\valo.png" class="card-img-top" alt="Valorant">
+                            <div class="card-body">
+                                <h5 class="card-title">Valorant</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\rainbow.png" class="card-img-top" alt="Rainbow Six">
+                            <div class="card-body">
+                                <h5 class="card-title">Rainbow Six</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\ea fc 24.png" class="card-img-top" alt="EA FC 24">
+                            <div class="card-body">
+                                <h5 class="card-title">EA FC 24</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\rainbow.png" class="card-img-top" alt="Grand Theft Auto 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Grand Theft Auto 5</h5>
+                                <a href="#" class="btn btn-primary btn-block">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="bg-light p-3">
+                    <h5>Filters</h5>
+                    <input type="text" class="form-control mb-3" placeholder="Search Your Game">
+                    <h6>GENRE</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">RPG</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                    <h6>FEATURES</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Multiplayer</a></li>
+                        <li><a href="#">Single Player</a></li>
+                        <li><a href="#">Co-op</a></li>
+                    </ul>
+                    <h6>TYPES</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Free</a></li>
+                        <li><a href="#">Paid</a></li>
+                    </ul>
+                    <h6>PLATFORM</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Console</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="mt-3">
+                Learn more about our mission, vision, and the team behind our company in the <strong>About Us</strong> section. Explore our wide range of products and enjoy a seamless shopping experience in the <strong>Shop</strong> section. We value your feedback, so please share your thoughts and help us improve our services in the <strong>Feedback</strong> section. Read our <strong>Privacy Policy</strong> to understand how we handle your personal data.
+            </p>
+            <div class="container d-flex justify-content-between">
+                <p>&copy; 2024 Trinetra Game Studio</p>
+                <div>
+                    <a href="#" class="mx-2 text-light">Privacy Policy</a>
+                    <a href="#" class="mx-2 text-light">Terms of Service</a>
+                    <a href="#" class="mx-2 text-light">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

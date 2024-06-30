@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trinetra Game Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .content {
+            padding: 80px 20px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+        }
+
+        .custom-navbar {
+            background-color: #333333;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .form-control {
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #444444;
+        }
+
+        .btn-outline-dark {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .btn-outline-dark:hover {
+            background-color:  #ff9800;
+            color: #fffefe;
+        }
+    </style>
+</head>
+
+<body style="font-family: Roboto;">
+    <header class="custom-navbar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            <nav class="d-flex align-items-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Add to cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" style="display: flex; gap: 5px;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="profile-icon ml-3">
+                    <a href="#" class="text-white"><img src="profile_icon.png" alt="Profile" width="40"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content container">
+        <h1 class="text-center my-5">About Us</h1>
+        <p>Welcome to Trinetra Game Studio! We are a passionate team dedicated to creating engaging and innovative games. Our mission is to provide gamers with immersive and enjoyable experiences through our high-quality games.</p>
+        <p>Founded in [Year], Trinetra Game Studio has grown from a small group of enthusiastic developers into a leading game development company. Our team is composed of talented individuals who specialize in various aspects of game development, including design, programming, art, and sound.</p>
+        <p>At Trinetra Game Studio, we believe in the power of creativity and innovation. We constantly strive to push the boundaries of what is possible in game development, and we are committed to delivering games that not only entertain but also inspire.</p>
+
+        <h2 class="my-5">Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 text-center team-member">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\boo.jpg" alt="Team Member 1">
+                <h5 class="mt-3">Aarogya Thapa</h5>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\93258615_261831121880384_5180983718763823104_n.jpg" alt="Team Member 2">
+                <h5 class="mt-3">Sandesh Thapa</h5>
+                <p>Lead Designer</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="C:\Users\user\Desktop\game store project\Game-Store\boo.jpg" alt="Team Member 3">
+                <h5 class="mt-3">Aarogya Thapa</h5>
+                <p>Senior Developer</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

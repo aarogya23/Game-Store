@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .confirmation-box {
+      width: 600px;
+      height: 600px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .tick-image {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .order-number {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .message {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .continue-btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="confirmation-box">
+      <div class="tick-image">
+        <img src="C:\Users\user\Desktop\game store project\Game-Store\tick1.png" alt="Tick Image">
+      </div>
+     <br>
+      <div class="order-number">
+        Order Number: ABC123456
+      </div>
+      <div class="message">
+        <p>Thanks for your order!</p>
+        <p>Ready to install your product?</p>
+      </div>
+      <a href="#" class="btn btn-primary continue-btn" style="width: 190px; height:auto; font-weight: 600; font-size: 24px;">Continue</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (optional for this example) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

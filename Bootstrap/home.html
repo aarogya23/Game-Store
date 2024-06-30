@@ -5,88 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinetra Game Studio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
 </head>
-<body style="font-family: Roboto;">
-    <style>
-        .card {
-    position: relative;
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s;
-}
-
-.card-body {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-text {
-    margin: 0;
-    transition: color 0.3s;
-}
-
-.card-body p:last-child {
-    margin: 0;
-}
-
-.popup-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.card:hover .popup-text {
-    opacity: 1;
-}
-
-.card:hover .card-text {
-    color: orange;
-}
-    </style>
-    <header class="custom-navbar py-3" style="background-color: #1f1f1f;">
+<style>
+    .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+</style>
+<body>
+    <header class="custom-navbar py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="C:\Users\user\Desktop\game store project\Game-Store\art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
             </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
                 <ul class="nav ms-auto">
                     <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-light" href="#">Wishlist</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="LIBRARY.html">Library</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Add to cart</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="library.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Add to Cart</a></li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 d-flex">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <div class="profile-icon ms-3">
-                    <a href="#" class="text-light"><img src="profile_icon.png" alt="Profile" width="40"></a>
+                    <a href="#" class="text-light"><img src="images/profile_icon.png" alt="Profile" width="40"></a>
                 </div>
             </nav>
         </div>
@@ -94,7 +45,7 @@
 
     <main>
         <section class="hero text-center bg-black py-5">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -166,139 +117,90 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="images/pubg.png" class="card-img-top" alt="PUBG Battlegrounds">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="images/valorant.png" class="card-img-top" alt="Valorant">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="images/fifa.png" class="card-img-top" alt="FIFA 23">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container my-5">
-            <h2 class="text-center mb-4">Free Games</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
                         <img src="C:\Users\user\Desktop\game store project\Game-Store\pubg.png" class="card-img-top" alt="PUBG Battlegrounds">
-                       
-                        
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\apex.png" class="card-img-top" alt="Apex Legends">
-                       
-                        
+                    <div class="card mb-4">
+                        <img src="C:\Users\user\Desktop\game store project\Game-Store\apex.png" class="card-img-top" alt="Valorant">
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\vdd.png" class="card-img-top" alt="Valorant">
-                        
-                        
+                    <div class="card mb-4">
+                        <img src="C:\Users\user\Desktop\game store project\Game-Store\vdd.png" class="card-img-top" alt="FIFA 23">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="container my-5">
-            <h2 class="text-center mb-4">Trending Games</h2>
-            <div class="row">
+            <h2 class="text-center mb-4 text-light">Trending Games</h2>
+            <div class="row">       
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\far cry.png" class="card-img-top" alt="Far Cry 6">
-                        
-                        <div class="card-body" style="display: flex; gap: 140px;">
-                            <p class="card-text">Far Cry 6</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\far cry.png" class="card-img-top" alt="EA FC 24">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Far Cry 6</p>
+                                <p class="text-light">Rs2400</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\ghost.png" class="card-img-top" alt="Ghost of Tsushima">
-                      
-                        <div class="card-body" style="display: flex; gap: 69px;">
-                            <p class="card-text">Ghost of Tsushima</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:/Users/user/Desktop/game store project/Game-Store/ghost.png" class="card-img-top" alt="Call of Duty Warzone">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Ghost of Tsushima</p>
+                                <p class="text-light">Rs1999</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\Days gone.png" class="card-img-top" alt="Days Gone">
-                        
-                        <div class="card-body" style="display: flex; gap: 128px;">
-                            <p class="card-text">Days Gone</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\Days gone.png" class="card-img-top" alt="Spider-man Miles Morales">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Days Gone</p>
+                                <p class="text-light">Rs1000</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-4">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\Cyberpunk.png" class="card-img-top" alt="Cyberpunk">
-                        
-                        <div class="card-body" style="display: flex; gap: 140px;">
-                            <p class="card-text">Cyberpunk</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\Cyberpunk.png" class="card-img-top" alt="Spider-man Miles Morales">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Days Gone</p>
+                                <p class="text-light">Rs1000</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-4">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\The last of us.png" class="card-img-top" alt="The Last of Us">
-                        
-                        <div class="card-body" style="display: flex; gap: 100px;">
-                            <p class="card-text">The Last of Us</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\The last of us.png" class="card-img-top" alt="Spider-man Miles Morales">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Days Gone</p>
+                                <p class="text-light">Rs1000</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-4" >
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\hog.png" class="card-img-top" alt="Hogwarts Legacy">
-                       
-                        <div class="card-body">
-                            <p class="card-text">Hogwarts Legacy</p>
-                            <p>Rs4400</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="card mb-4">
+                            <img src="C:\Users\user\Desktop\game store project\Game-Store\hog.png" class="card-img-top" alt="Spider-man Miles Morales">
+                            <div class="card-body d-flex justify-content-between">
+                                <p class="card-text">Days Gone</p>
+                                <p class="text-light">Rs1000</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="container my-5">
-            <h2 class="text-center mb-4">Old fifa Title</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa 14.png" class="card-img-top" alt="Fifa 14">
-                       
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa17.png" class="card-img-top" alt="Fifa 17">
-                       
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="C:\Users\user\Desktop\game store project\Game-Store\fifa 18.png" class="card-img-top" alt="Fifa 18">
-                        
-                        
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -307,16 +209,27 @@
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#">About us</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Privacy Policy</a></li>
             </ul>
+            <p class="mt-3">
+                Learn more about our mission, vision, and the team behind our company in the <strong>About Us</strong> section. Explore our wide range of products and enjoy a seamless shopping experience in the <strong>Shop</strong> section. We value your feedback, so please share your thoughts and help us improve our services in the <strong>Feedback</strong> section. Read our <strong>Privacy Policy</strong> to understand how we handle your personal data.
+            </p>
+            <div class="container d-flex justify-content-between">
+                <p>&copy; 2024 Trinetra Game Studio</p>
+                <div>
+                    <a href="#" class="mx-2 text-light">Privacy Policy</a>
+                    <a href="#" class="mx-2 text-light">Terms of Service</a>
+                    <a href="#" class="mx-2 text-light">Contact Us</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>

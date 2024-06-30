@@ -12,9 +12,56 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <style>
-    .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    /* Dropdown Button */
+    .dropbtn img {
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+        cursor: pointer;
+        border-radius: 50%; /* Make the image circular, if desired */
+        transition: opacity 0.3s; /* Smooth transition for hover effect */
+    }
+
+    /* Container needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu when the user clicks on the button */
+    .dropdown.show .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn img {
+        opacity: 0.8; /* Adjust the opacity on hover */
+    }
 </style>
 <body>
     <header class="custom-navbar py-3">
@@ -36,8 +83,15 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                 </form>
-                <div class="profile-icon ms-3">
-                    <a href="#" class="text-light"><img src="images/profile_icon.png" alt="Profile" width="40"></a>
+                <div class="dropdown ms-3">
+                    <a href="#" class="dropbtn">
+                        <img src="C:\Users\user\Desktop\game store project\Game-Store\icon.png" alt="Dropdown Image" alt="Profile" width="40">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Option 1</a>
+                        <a href="#option2">Option 2</a>
+                        <a href="#option3">Option 3</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -226,6 +280,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        // jQuery for the dropdown
+        $(document).ready(function(){
+            $(".dropbtn").click(function(){
+                $(".dropdown-content").toggle();
+            });
+            $(document).click(function(event) {
+                var $target = $(event.target);
+                if(!$target.closest('.dropdown').length && 
+                $('.dropdown-content').is(":visible")) {
+                    $('.dropdown-content').hide();
+                }        
+            });
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

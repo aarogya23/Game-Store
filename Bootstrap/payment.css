@@ -9,107 +9,36 @@ body{
     margin-left: 60px;
     border-radius: 10px;
 }
-.box {
-    position: relative;
+.reward{
     width: 746px;
     height: 79px;
     background-color: #D9D9D9;
-    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
     border-radius: 10px;
-    margin-left: 50px;
-    align-items: center;
-    cursor: pointer;
 }
-
-.toggle {
-    display: none;
+.otherpay1{
+    width: 746px;
+    height: 79px;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
 }
-
-.circle {
-    width: 29px;
-    height: 29px;
-    background-color: #fff;
-    margin-left: 50px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.otherpay2{
+    width: 746px;
+    height: 79px;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 10px;
 }
-
-.toggle:checked + .circle {
-    background-color: rgb(16 86 239 / 60%);
-    transform: scale(1.2);
-}
-.Add{
-    margin-top: 60px;
-    width: 445px;
+.ordersummary{
+    width:445px;
     height: 572px;
     background-color: #D9D9D9;
+    margin-left: 935px;
+    margin-top:-660px ;
     border-radius: 10px;
-}
-.pic{
-    height: 104px;
-    width: 137px; 
-    margin-left: 30px; 
-    margin-top: 30px;
-}
-.game{
-    width: 213px;
-     height: 104px; 
-     margin-left: 182px; 
-     margin-top: -105px;
-     font-weight: 500;
-}
-.price1{
-    display: flex;
-    margin-top: 30px;
-    gap: 235px;
-    margin-left: -150px;  
-}
-.price2{
-    display: flex;
-    margin-top: 3px;
-    gap: 243px;
-    margin-left: -150px;
-}
-.price3{
-    display: flex;
-    margin-top: 3px;
-    gap: 239px;
-    margin-left: -150px;
-}
-.cir{
-    width: 29px;
-    height: 29px;
-    margin-left: 30px;
-    margin-top: 200px;
-    background-color: #fcfcfc;
-    border-radius: 50%;
-    transition: background-color 0.3s ease,transform 0.3s ease;
-}
-.cir:hover{
-    background-color: rgb(16 86 239 / 60%);
-    transform: scale(1.2);
-}
-.detail{
-    margin-left: 89px;
-    margin-top: -30px;
-}
-.place{
-    width: 445px;
-    height: 210px;
-    background-color:#D9D9D9 ;
-    border-radius: 10px;
-    margin-top: 16px; 
-    margin-bottom: 60px;
-}
-.text{
-    padding-left: 30px;
-    padding-top: 30px;
-}
-.placeorder{
-    width:285px;
-    height:63px;
-    background-color: rgb(16 86 239 / 60%);
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 80px;
+
 }

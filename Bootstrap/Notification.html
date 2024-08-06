@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Trinetra Game Studio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn img {
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #161616;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+            border-radius: 10px;
+        }
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .admin-btn {
+            background-color: #4CAF50;
+            color: #030303;
+            padding: 12px 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+        }
+        .dropdown-content a:hover,
+        .admin-btn:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .notification-card {
+            background-color: black;
+            color: white;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .notification-card-body {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+        }
+        .notification-image {
+            max-width: 100px;
+            margin-right: 1rem;
+            border-radius: 4px;
+        }
+        .notification-card .btn-outline-warning {
+            color: white;
+            border-color: white;
+        }
+        .notification-card .btn-outline-warning:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-navbar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="whishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="LIBARAY.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="ADD TO CART1.html">Add to Cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="dropdown ms-3">
+                    <a href="#" class="dropbtn">
+                        <img src="icon.png" alt="Dropdown Icon" width="40">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Profile</a>
+                        <a href="Notification.html">Notifications</a>
+                        <a href="Notification.html">Trinetra Gift Card</a>
+                        <a href="#option3">More</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container notification-section">
+        <h2 style="color: white;">Notifications</h2>
+        <p style="color: white;">Stay updated with the latest news and announcements from Trinetra Game Studio.</p>
+
+        <div class="card notification-card">
+            <div class="notification-card-body">
+                <img src="modern1234.png" alt="Call of Duty: Modern Warfare III" class="notification-image">
+                <div>
+                    <h5 class="card-title">Call of Duty: Modern Warfare III</h5>
+                    <p class="card-text">Get ready for an immersive gaming experience with Call of Duty: Modern Warfare III!</p>
+                    <p class="card-text"><strong>Installation Instructions:</strong> Go to the game store, purchase the game, and follow the on-screen instructions to install it on your device.</p>
+                    <p class="card-text"><strong>Price:</strong> $59.99</p>
+                    <p class="card-text"><strong>Offer:</strong> Buy now and get 10% off your next purchase!</p>
+                    <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card notification-card">
+            <div class="notification-card-body">
+                <img src="https://via.placeholder.com/100" alt="Fortnite" class="notification-image">
+                <div>
+                    <h5 class="card-title">Fortnite</h5>
+                    <p class="card-text">Jump into the action-packed world of Fortnite!</p>
+                    <p class="card-text"><strong>Installation Instructions:</strong> Visit the game store, download Fortnite, and follow the setup instructions to start playing.</p>
+                    <p class="card-text"><strong>Price:</strong> Free</p>
+                    <p class="card-text"><strong>Offer:</strong> Get a free exclusive skin with your first purchase in the game!</p>
+                    <a href="#" class="btn btn-outline-warning">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card notification-card">
+            <div class="notification-card-body">
+                <img src="https://via.placeholder.com/100" alt="Minecraft" class="notification-image">
+                <div>
+                    <h5 class="card-title">Minecraft</h5>
+                    <p class="card-text">Explore endless worlds and build anything you can imagine in Minecraft.</p>
+                    <p class="card-text"><strong>Installation Instructions:</strong> Purchase Minecraft from the game store and follow the on-screen instructions to install it on your device.</p>
+                    <p class="card-text"><strong>Price:</strong> $26.95</p>
+                    <p class="card-text"><strong>Offer:</strong> Get a free texture pack with your purchase!</p>
+                    <a href="#" class="btn btn-outline-warning">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

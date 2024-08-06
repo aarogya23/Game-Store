@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dashboard - Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            vertical-align: middle;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-profile img {
+            margin-right: 10px;
+        }
+
+        .card-title {
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .progress {
+            margin-top: 20px;
+        }
+
+        .match-history {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .calendar-section {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link text-white" id="calendar-link" href="#">Calendar</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="icon.png" alt="User Avatar" class="trinetra-logo">
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-2 bg-secondary text-white p-3">
+                <h4>Our Games</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Counter Strike</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Quake Live</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Unreal Tournament</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Call of Duty</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">World of Warcraft</a></li>
+                </ul>
+            </aside>
+
+            <main class="col-md-10 p-3">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Our Stats</h5>
+                                <p>Establish: 21 Jun 2023</p>
+                                <p>Total time played by players: 287 hours</p>
+                                <p>Games played: 982</p>
+                                <p>World ranking: #137</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:71%">71% Player Ratio</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Game and their state</h5>
+                                <p>Grand Theft Auto: 81%</p>
+                                <p>Call of duty Modern Warfare: 82%</p>
+                                <p>Ea Fc 24: 70%</p>
+                                <p>Valorant: 23%</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Best Game of all time</h5>
+                                <div style="display: flex; flex-direction: row; gap: 70px;">
+                                    <img src="fifa 14.png" alt="Best Map" class="img-fluid">
+                                    <img src="fifa17.png" alt="Best Map" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Match History</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Bones <span class="badge badge-success">Won</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Doom <span class="badge badge-success">Won</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Orbb <span class="badge badge-danger">Lost</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Uriel <span class="badge badge-success">Won</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Sorlag <span class="badge badge-success">Won</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Keel <span class="badge badge-success">Won</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Xaero <span class="badge badge-danger">Lost</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Server Search</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <select id="country" class="form-control">
+                                            <option>Italy</option>
+                                            <option>USA</option>
+                                            <option>Germany</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="game-mode">Game Mode</label>
+                                        <select id="game-mode" class="form-control">
+                                            <option>Team Deathmatch</option>
+                                            <option>Capture the Flag</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Player Search</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Type a nickname">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar Section -->
+                <div class="calendar-section" id="calendar-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-center">Calendar</h4>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center">June 2024</h4>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>S</th>
+                                                <th>M</th>
+                                                <th>T</th>
+                                                <th>W</th>
+                                                <th>T</th>
+                                                <th>F</th>
+                                                <th>S</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                                <td>20</td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td>26</td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>30</td>
+                                                <td>31</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Page Section -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Admin - Game Records</h5>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Game</th>
+                                            <th>Wins</th>
+                                            <th>Losses</th>
+                                            <th>Win Rate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Counter Strike</td>
+                                            <td>150</td>
+                                            <td>50</td>
+                                            <td>75%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quake Live</td>
+                                            <td>80</td>
+                                            <td>20</td>
+                                            <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unreal Tournament</td>
+                                            <td>90</td>
+                                            <td>30</td>
+                                            <td>75%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Call of Duty</td>
+                                            <td>200</td>
+                                            <td>100</td>
+                                            <td>66.67%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>World of Warcraft</td>
+                                            <td>60</td>
+                                            <td>40</td>
+                                            <td>60%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('calendar-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            var calendarSection = document.getElementById('calendar-section');
+            if (calendarSection.style.display === 'none' || calendarSection.style.display === '') {
+                calendarSection.style.display = 'block';
+            } else {
+                calendarSection.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

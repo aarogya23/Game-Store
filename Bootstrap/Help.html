@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Trinetra Game Studio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .help-section {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .help-section h2, .help-section h4 {
+            text-align: center;
+        }
+        .accordion .card {
+            background-color: #444;
+            border: none;
+        }
+        .accordion .card-header {
+            background-color: #555;
+        }
+        .accordion .btn-link {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .feedback-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .feedback-icon:hover {
+            background-color: #cc0000;
+        }
+        .feedback-form {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        /* Container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropbtn img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Align the dropdown content to the right of the button */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Button inside the dropdown */
+.admin-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Change color of dropdown links and button on hover */
+.dropdown-content a:hover,
+.admin-btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content,
+.dropdown.show .dropdown-content {
+    display: block;
+}
+.navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+   <header class="custom-navbar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="art.png" alt="Trinetra Game Studio" class="img-fluid" width="150">
+            </div>
+            
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <nav class="collapse navbar-collapse d-md-flex justify-content-md-end align-items-center" id="navbarMenu">
+                <ul class="nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="whishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="LIBARAY.html">Library</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="ADD TO CART1.html">Add to Cart</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="dropdown ms-3">
+                    <a href="#" class="dropbtn">
+                        <img src="icon.png" alt="Dropdown Image" width="40">
+                    </a>
+                    <div class="dropdown-content" style="border-radius: 10px;">
+                        <a href="#option1">Profile</a>
+                        <a href="#option2">Trinetra Gift Card</a>
+                        <a href="#option3">More</a>
+                        <button onclick="goToAdminMode()" class="admin-btn">Admin Mode</button>
+                    </div>
+                </div>
+                
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="container help-section">
+        <h2>Help & Support</h2>
+        <p>If you have any questions or need assistance, you can find the answers here. Browse through our frequently asked questions or contact us directly for support.</p>
+
+        <h4>Frequently Asked Questions</h4>
+        <div id="accordion" class="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I create an account?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        To create an account, click on the "Sign Up" button on the top right corner of the page and fill in your details.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I reset my password?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse text-light" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        If you forget your password, click on "Forgot Password" on the login page, and follow the instructions to reset it.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How can I contact customer support?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse text-light" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        You can contact our customer support team via email at support@trinetra.com or call us at +123 456 7890.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Contact Us</h4>
+        <p>If you need further assistance, please contact us directly:</p>
+        <ul>
+            <li>Email: support@trinetra.com</li>
+            <li>Phone: +123 456 7890</li>
+        </ul>
+    </div>
+
+    <div class="feedback-icon" onclick="toggleFeedbackForm()">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <div class="feedback-form" id="feedbackForm">
+        <h4>Feedback</h4>
+        <form>
+            <div class="form-group">
+                <label for="feedback-name">Name:</label>
+                <input type="text" class="form-control" id="feedback-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback-email">Email address:</label>
+                <input type="email" class="form-control" id="feedback-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback-message">Message:</label>
+                <textarea class="form-control" id="feedback-message" rows="3" placeholder="Enter your feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block" style="background-color: #ffc107;">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleFeedbackForm() {
+            const form = document.getElementById('feedbackForm');
+            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
